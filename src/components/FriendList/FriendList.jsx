@@ -16,8 +16,16 @@ export default function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array,
-  isOnline: PropTypes.bool,
-  avatar: PropTypes.string,
-  name: PropTypes.string,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
 };
+
+// function getRandomHexColor() {
+//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+// }
