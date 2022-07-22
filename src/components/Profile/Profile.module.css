@@ -1,0 +1,66 @@
+.description {
+  padding: 20px 0px 20px 0px;
+  width: 250px;
+
+  text-align: center;
+
+  border-top: 1px solid var(--primary-accent-color);
+  border-left: 1px solid var(--primary-accent-color);
+  border-right: 1px solid var(--primary-accent-color);
+}
+
+.avatar {
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  border: 2px solid var(--border-accent-color);
+}
+
+.name {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tag {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--primary-accent-color);
+}
+
+.location {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-accent-color);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 20px 0px 20px 0px;
+
+  width: 250px;
+
+  background-color: var(--card-background-color);
+
+  border-bottom: 1px solid var(--primary-accent-color);
+  border-left: 1px solid var(--primary-accent-color);
+  border-right: 1px solid var(--primary-accent-color);
+}
+
+.label {
+  display: flex;
+
+  color: var(--primary-accent-color);
+  font-size: 12px;
+}
+
+.quantity {
+  font-weight: 700;
+}
