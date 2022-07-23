@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
+  Section,
   ContainerCard,
   Image,
   TextName,
@@ -22,29 +23,31 @@ export default function Profile({
   likes,
 }) {
   return (
-    <div className="profile">
-      <ContainerCard>
-        <Image src={avatar} alt={username}></Image>
-        <TextName>{username}</TextName>
-        <TextTag>@{tag}</TextTag>
-        <TextLocation>{location}</TextLocation>
-      </ContainerCard>
+    <Section>
+      <div className="profile">
+        <ContainerCard>
+          <Image src={avatar} alt={username}></Image>
+          <TextName>{username}</TextName>
+          <TextTag>@{tag}</TextTag>
+          <TextLocation>{location}</TextLocation>
+        </ContainerCard>
 
-      <List>
-        <li>
-          <Label>Followers</Label>
-          <Value>{followers}</Value>
-        </li>
-        <li>
-          <Label>Views</Label>
-          <Value>{views}</Value>
-        </li>
-        <li>
-          <Label>Likes</Label>
-          <Value>{likes}</Value>
-        </li>
-      </List>
-    </div>
+        <List>
+          <li>
+            <Label>Followers</Label>
+            <Value>{followers}</Value>
+          </li>
+          <li>
+            <Label>Views</Label>
+            <Value>{views}</Value>
+          </li>
+          <li>
+            <Label>Likes</Label>
+            <Value>{likes}</Value>
+          </li>
+        </List>
+      </div>
+    </Section>
   );
 }
 

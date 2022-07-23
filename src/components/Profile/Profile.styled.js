@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
+export const Section = styled.section`
+  padding: 60px 0px 60px 0px;
+`;
+
 export const ContainerCard = styled.div`
   padding: 40px 0px 40px 0px;
+  margin: 0 auto;
+
   width: 230px;
 
   text-align: center;
@@ -42,10 +48,12 @@ export const TextLocation = styled.p`
 export const List = styled.ul`
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
 
   padding: 20px 0px 20px 0px;
 
   width: 230px;
+  margin: 0 auto;
 
   background-color: var(--card-background-color);
 
