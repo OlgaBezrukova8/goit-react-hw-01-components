@@ -5,6 +5,7 @@
   --card-background-color: #f4f4f4;
   --border-accent-color: #389067;
   --primary-white-color: #fff;
+  --table-background-color: #87cefa;
 }
 
 * {
@@ -40,4 +41,10 @@ img {
 ul,
 ol {
   list-style: none;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: center;
 }
