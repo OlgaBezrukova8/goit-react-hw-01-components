@@ -2,19 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FriendListItem from 'components/FriendList/FriendListItem';
 
+import { Section, Container } from 'components/FriendList/FriendList.styled';
+
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
-      {friends.map(({ id, isOnline, avatar, name }) => (
-        <FriendListItem
-          key={id}
-          id={id}
-          isOnline={isOnline}
-          avatar={avatar}
-          name={name}
-        />
-      ))}
-    </ul>
+    <Section>
+      <Container>
+        <ul>
+          {friends.map(({ id, isOnline, avatar, name }) => (
+            <FriendListItem
+              key={id}
+              id={id}
+              isOnline={isOnline}
+              avatar={avatar}
+              name={name}
+            />
+          ))}
+        </ul>
+      </Container>
+    </Section>
   );
 }
 
@@ -28,5 +34,3 @@ FriendList.propTypes = {
     })
   ),
 };
-
-

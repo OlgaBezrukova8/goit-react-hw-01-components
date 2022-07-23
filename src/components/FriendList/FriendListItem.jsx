@@ -1,9 +1,16 @@
+import {
+  List,
+  Status,
+  Image,
+  Text,
+} from 'components/FriendList/FriendListItem.styled';
+
 export default function FriendListItem({ isOnline, avatar, name }) {
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
-    </li>
+    <List>
+      <Status isOnline={isOnline}></Status>
+      <Image src={avatar} alt={name} width="48" />
+      <Text>{name}</Text>
+    </List>
   );
 }
