@@ -6,6 +6,7 @@
   --border-accent-color: #389067;
   --primary-white-color: #fff;
   --table-background-color: #87cefa;
+  --table-color: rgb(135, 206, 250, 0.2);
 }
 
 * {
@@ -45,6 +46,6 @@ ol {
 
 th,
 td {
-  padding: 20px;
+  padding: 20px 100px;
   text-align: center;
 }
