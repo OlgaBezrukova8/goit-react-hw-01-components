@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/OlgaBezrukova8/goit-react-hw-01-components/static/css/main.fbed5cb8.css",
-    "main.js": "/OlgaBezrukova8/goit-react-hw-01-components/static/js/main.86e095ff.js",
+    "main.css": "/OlgaBezrukova8/goit-react-hw-01-components/static/css/main.2e2bb4f5.css",
+    "main.js": "/OlgaBezrukova8/goit-react-hw-01-components/static/js/main.83793632.js",
     "index.html": "/OlgaBezrukova8/goit-react-hw-01-components/index.html",
-    "main.fbed5cb8.css.map": "/OlgaBezrukova8/goit-react-hw-01-components/static/css/main.fbed5cb8.css.map",
-    "main.86e095ff.js.map": "/OlgaBezrukova8/goit-react-hw-01-components/static/js/main.86e095ff.js.map"
+    "main.2e2bb4f5.css.map": "/OlgaBezrukova8/goit-react-hw-01-components/static/css/main.2e2bb4f5.css.map",
+    "main.83793632.js.map": "/OlgaBezrukova8/goit-react-hw-01-components/static/js/main.83793632.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbed5cb8.css",
-    "static/js/main.86e095ff.js"
+    "static/css/main.2e2bb4f5.css",
+    "static/js/main.83793632.js"
   ]
 }
