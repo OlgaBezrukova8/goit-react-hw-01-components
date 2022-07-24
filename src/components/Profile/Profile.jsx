@@ -18,9 +18,10 @@ export default function Profile({
   tag,
   location,
   avatar,
-  followers,
-  views,
-  likes,
+  stats,
+  // followers,
+  // views,
+  // likes,
 }) {
   return (
     <Section>
@@ -35,15 +36,15 @@ export default function Profile({
         <List>
           <li>
             <Label>Followers</Label>
-            <Value>{followers}</Value>
+            <Value>{stats.followers}</Value>
           </li>
           <li>
             <Label>Views</Label>
-            <Value>{views}</Value>
+            <Value>{stats.views}</Value>
           </li>
           <li>
             <Label>Likes</Label>
-            <Value>{likes}</Value>
+            <Value>{stats.likes}</Value>
           </li>
         </List>
       </div>
@@ -56,7 +57,9 @@ Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
