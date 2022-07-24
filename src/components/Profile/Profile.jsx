@@ -18,10 +18,7 @@ export default function Profile({
   tag,
   location,
   avatar,
-  stats,
-  // followers,
-  // views,
-  // likes,
+  stats: { followers, views, likes },
 }) {
   return (
     <Section>
@@ -36,15 +33,15 @@ export default function Profile({
         <List>
           <li>
             <Label>Followers</Label>
-            <Value>{stats.followers}</Value>
+            <Value>{followers}</Value>
           </li>
           <li>
             <Label>Views</Label>
-            <Value>{stats.views}</Value>
+            <Value>{views}</Value>
           </li>
           <li>
             <Label>Likes</Label>
-            <Value>{stats.likes}</Value>
+            <Value>{likes}</Value>
           </li>
         </List>
       </div>
